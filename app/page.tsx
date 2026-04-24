@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       {chapters.map((chapter) => (
         <Link key={chapter.slug} href={`/chapters/${chapter.slug}`}>
           <Image

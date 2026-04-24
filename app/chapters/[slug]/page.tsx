@@ -7,5 +7,5 @@ export default async function ChapterPage({
 }) {
   const { slug } = await params;
   const chapter = chapters.find((c) => c.slug === slug);
-  return <p>{chapter?.description}</p>;
+  return <p className="desc">{chapter?.description}</p>;
 }
